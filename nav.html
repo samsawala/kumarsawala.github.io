@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym</title>
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+
+
+    }
+
+    nav {
+        height: 100px;
+        background: transparent;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo {
+        width: 40%;
+        color: #0984e3;
+        padding: 60px;
+
+
+    }
+
+    .menu {
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .menu a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .logo h1 {
+        text-shadow: 2px 2px 2px rgb(6, 48, 87);
+        cursor: not-allowed;
+
+    }
+
+    .menu a:before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 3px;
+        width: 0%;
+        background-color: #fff;
+        transition: all 0.5s linear;
+    }
+
+    .menu a:hover::before {
+        width: 100%;
+        background-color: red;
+
+    }
+
+    header {
+        width: 100%;
+        height: 100vh;
+        background: url(webs.jpg);
+        background-size: 100% 100%;
+    }
+
+    .h1 {
+        position: absolute;
+        top: 177px;
+        left: 433px;
+        color: #fff;
+        /* background-color: tomato; */
+        text-shadow: 4px 7px 2px rgb(180, 0, 0);
+        font-size: 42px;
+        background: rgba(0, 0, 0, 0.5);
+
+
+    }
+    .h2{
+        position: absolute;
+        top: 240px;
+    left: 580px;
+        color: #fff;
+        /* background-color: tomato; */
+        text-shadow: 4px 7px 2px rgb(180, 0, 0);
+        font-size: 42px;
+        background: rgba(0, 0, 0, 0.5);
+
+
+    }
+
+    .main {
+        border: 2px solid rgb(255, 255, 255);
+        position: absolute;
+        top: 380px;
+        left: 10px;
+        width: 430px;
+        height: 220px;
+        padding: 10px 10px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+
+        border-radius: 20px;
+    }
+
+    .main .btn {
+        color: red;
+        width: 94px;
+
+    }
+
+    .form input {
+        width: 200px;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 18px;
+        padding: 2px 20px;
+        margin: 2px 2px;
+
+
+    }
+
+
+    .main h3 {
+
+        /* padding-top: 20px; */
+        color: rgb(255, 227, 227);
+        margin: 6px;
+        
+
+    }
+
+    .form .s[type=text]:focus {
+        border: 3px solid rgb(251, 0, 0);
+    }
+   label{
+       color: white;
+   }
+   
+</style>
+
+<body>
+    <header>
+        <main>
+            <section class="sec">
+                <h1 class="h1">WELCOME TO BEST GYM </h1>
+                <h2 class="h2">IN NASHIK</h2>
+            </section>
+            <div class="main">
+                <form action="noaction.php">
+                    <h3>JOIN THE BEST GYM OF NASHIK</h3>
+                    <div class="form">
+
+                        <input class="s" type="text" placeholder="ENTER YOUR NAME"><br>
+                    </div>
+                    <div class="form">
+
+                        <input class="s" type="email" placeholder="ENTER YOUR EMAIL"><br>
+                    </div>
+                    <div class="form">
+
+                        <input class="s" type="ADD" placeholder="ENTER YOUR ADDRESS"><br>
+                    </div>
+                    <div class="form">
+
+                        <input class="s" type="number" placeholder="ENTER YOUR NUMBER"><br>
+                    </div>
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label class="gender"  for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label class="gender"  for="female">Female</label>
+                        <input  type="radio" id="other" name="gender" value="other">
+                        <label class="gender" for="other">Other</label>
+                    </div>
+                    <div class="form">
+
+                        <input class="s" class="btn" type="submit" value="SUBMIT">
+                    </div>
+
+            </div>
+            </form>
+
+
+        </main>
+
+        <nav>
+            <div class="logo">
+                <h1>KumarSawala</h1>
+
+            </div>
+            <div class="menu">
+                <a href="">HOME</a>
+                <a href="">SERVICES</a>
+                <a href="">GALLERY</a>
+                <a href="">ABOUT</a>
+                <a href="">CONTACT</a>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>
